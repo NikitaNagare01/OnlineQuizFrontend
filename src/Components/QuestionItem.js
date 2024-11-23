@@ -19,7 +19,7 @@ const QuestionItem = (props) => {
 
     const questionitempage=async()=>{
 
-        const res = await fetch('http://localhost:5000/exam/quiz',{
+        const res = await fetch('https://quiz-app-backend-jt93.onrender.com/exam/quiz',{
             method:'POST',
             headers:{
                 "Content-Type" : "application/json",
@@ -55,7 +55,7 @@ const QuestionItem = (props) => {
     const oncli=async(e)=>{
         console.log(ansfi);
 
-        try{const res= await fetch('http://localhost:5000/exam/submit',{
+        try{const res= await fetch('https://quiz-app-backend-jt93.onrender.com/exam/submit',{
             method:'POST',
             headers:{
                 "Content-Type" : "application/json",

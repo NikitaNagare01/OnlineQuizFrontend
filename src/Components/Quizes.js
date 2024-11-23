@@ -11,7 +11,7 @@ const Quizes = () => {
 
   const quizespage= async()=>{
 
-    const res = await fetch('http://localhost:5000/exam/getallquiz',{
+    const res = await fetch('https://quiz-app-backend-jt93.onrender.com/exam/getallquiz',{
       method:'GET',
       headers:{
         "Content-Type" : "application/json",

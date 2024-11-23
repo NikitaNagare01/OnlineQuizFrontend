@@ -35,7 +35,7 @@ const navigate = useNavigate();
 
   const create=async()=>{
 
-    const res= await fetch("http://localhost:5000/quiz/create",{
+    const res= await fetch("https://quiz-app-backend-jt93.onrender.com/quiz/create",{
       method:"POST",
       headers:{
         

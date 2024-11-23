@@ -10,7 +10,7 @@ const Account = () => {
 
     const userquiz=async()=>{
 
-        const res =await fetch('http://localhost:5000/exam/userquiz',{
+        const res =await fetch('https://quiz-app-backend-jt93.onrender.com/exam/userquiz',{
             method:'GET',
             headers:{
                 "Content-Type" : "application/json",

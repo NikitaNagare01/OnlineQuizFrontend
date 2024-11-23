@@ -3,7 +3,7 @@ import React from 'react'
 const AccountItem = (props) => {
 
   const del=async()=>{
-    const res= await fetch("http://localhost:5000/quiz/delete",{
+    const res= await fetch("https://quiz-app-backend-jt93.onrender.com/quiz/delete",{
       method:'DELETE',
       headers:{
         "Content-Type" : "application/json",
