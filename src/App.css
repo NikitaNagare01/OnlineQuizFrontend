@@ -1,0 +1,373 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+
+
+
+/************** WHOLE CSS *************/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background:black;
+  color: #fff;
+}
+
+.con{
+  margin: 50px;
+}
+
+h1{
+  text-align: center;
+}
+
+
+
+/* ***************** NAVBAR CSS *************/
+
+.navbar-brand{
+  margin-left: 50px;
+}
+
+.container-fluid{
+  margin-top: 20px;
+}
+
+.navbar-brand{
+  color: rgb(75, 255, 15);
+}
+
+
+
+
+nav ul li .nav-link{
+
+  text-decoration: none;
+
+  position: relative;
+}
+
+nav ul li .nav-link::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background:rgb(75, 255, 15);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li .nav-link:hover::after{
+  width: 100%;
+}
+
+/* nav ul li .nav-link.active::after{
+  color: rgb(210, 20, 20);
+} */
+
+
+
+
+/********************* HOME CSS ******************/
+
+#home{
+  margin-top: 50px;
+}
+
+.ro{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-2{
+ flex-basis: 35%; 
+}
+
+.about-col-2 img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-1{
+  flex-basis: 60%;
+}
+
+.about-col-1{
+  margin-top: 8%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.about-col-1 h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.about-col-1 h1 span{
+  font-size: 60px;
+  margin-top: 20px;
+  color: rgb(75, 255, 15);
+}
+
+.se{
+  padding: 50px;
+  padding-top: 100px;
+}
+
+.se-col-1{
+  flex-basis: 35%;
+}
+.se-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.se-col-2{
+  flex-basis: 50%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.se-col-2 ul li{
+ list-style-type: none;
+}
+
+
+/************************ FOOTER ******************/
+
+#footer hr{
+  color: rgb(75, 255, 15);
+}
+
+.footerlist ul li{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerlist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.footerlist div{
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+
+
+/*********************** LOGIN CSS ********************/
+
+#login{
+  margin-top: 80px;
+  margin-bottom: 80px;
+  
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: solid;
+  border-color:  rgb(74, 156, 46);
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color:white
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-form .btn {
+  width: 100%;
+  padding: 10px;
+  background-color:  rgb(75, 255, 15);
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form .btn:hover {
+  background-color: #217dbb;
+}
+
+
+/*************** SIGNUP CSS ****************/
+
+#signup{
+  margin-top: 80px;
+  margin-bottom: 80px;
+    
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: solid;
+  border-color:  rgb(74, 156, 46);
+}
+
+.register-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+
+.register-form .btn {
+  width: 100%;
+  padding: 10px;
+  background-color:  rgb(75, 255, 15);
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-form .btn:hover {
+  background-color: #217dbb;
+}
+
+
+
+/******************** QUIZITEM *************/
+
+
+/* 
+#footer hr{
+  color: rgb(75, 255, 15);
+}
+
+.footerlist ul li{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerlist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.footerlist div{
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+} */
+
+.footerlist .fo  {
+  color: white;
+  background:rgb(45, 163, 5);
+  transform: translateY(-10px);
+  text-align: center;
+}
+
+.quizli{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
